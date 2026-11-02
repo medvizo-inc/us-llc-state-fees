@@ -1,0 +1,1600 @@
+{
+  "title": "US LLC state fees",
+  "description": "What each US state and DC charges to form an LLC and to keep it: the filing fee, the recurring report or tax, when it falls due, and the state's own totals over three and five years. State charges only.",
+  "publisher": {
+    "name": "BaseAcross",
+    "url": "https://baseacross.com"
+  },
+  "license": "CC-BY-4.0",
+  "source": "https://baseacross.com/tools/llc-fees-by-state",
+  "checked_from": "2026-10-16",
+  "checked_to": "2026-10-17",
+  "notes": [
+    "Only the state's own charges: no registered agent, no service fee, no late fees, nothing that depends on income.",
+    "Years one to three are for an LLC formed in January. The low and high totals are the least and the most over a formation in any month.",
+    "Each row carries the day its figures were checked against the state's filing office."
+  ],
+  "states": [
+    {
+      "state": "Alabama",
+      "code": "AL",
+      "filing_fee": 200,
+      "recurring_charge": "None",
+      "recurring_extra": null,
+      "recurring_due": "An Alabama LLC files and pays the Business Privilege Tax only in a year the tax works out above $100",
+      "by_year_usd": [
+        225,
+        0,
+        0
+      ],
+      "three_year_usd": {
+        "low": 225,
+        "high": 225,
+        "high_if": null
+      },
+      "five_year_usd": {
+        "low": 225,
+        "high": 225,
+        "high_if": null
+      },
+      "newspaper_notice": false,
+      "owners_on_public_record": false,
+      "filing_office": {
+        "name": "Alabama Secretary of State",
+        "url": "https://www.sos.alabama.gov/business-entities/llcs"
+      },
+      "checked": "2026-10-16",
+      "state_page": "https://baseacross.com/llc/alabama"
+    },
+    {
+      "state": "Alaska",
+      "code": "AK",
+      "filing_fee": 250,
+      "recurring_charge": "$100 every two years",
+      "recurring_extra": null,
+      "recurring_due": "By January 2 every second year on the creation-year cycle; a 2026 formation first reports in 2028",
+      "by_year_usd": [
+        300,
+        50,
+        150
+      ],
+      "three_year_usd": {
+        "low": 500,
+        "high": 500,
+        "high_if": null
+      },
+      "five_year_usd": {
+        "low": 700,
+        "high": 700,
+        "high_if": null
+      },
+      "newspaper_notice": false,
+      "owners_on_public_record": true,
+      "filing_office": {
+        "name": "Alaska Division of Corporations, Business and Professional Licensing",
+        "url": "https://www.commerce.alaska.gov/web/cbpl/"
+      },
+      "checked": "2026-10-16",
+      "state_page": "https://baseacross.com/llc/alaska"
+    },
+    {
+      "state": "Arizona",
+      "code": "AZ",
+      "filing_fee": 50,
+      "recurring_charge": "None",
+      "recurring_extra": null,
+      "recurring_due": "Arizona LLCs file no annual report",
+      "by_year_usd": [
+        50,
+        0,
+        0
+      ],
+      "three_year_usd": {
+        "low": 50,
+        "high": 50,
+        "high_if": null
+      },
+      "five_year_usd": {
+        "low": 50,
+        "high": 50,
+        "high_if": null
+      },
+      "newspaper_notice": true,
+      "owners_on_public_record": true,
+      "filing_office": {
+        "name": "Arizona Corporation Commission",
+        "url": "https://azcc.gov/"
+      },
+      "checked": "2026-10-16",
+      "state_page": "https://baseacross.com/llc/arizona"
+    },
+    {
+      "state": "Arkansas",
+      "code": "AR",
+      "filing_fee": 45,
+      "recurring_charge": "$150 a year",
+      "recurring_extra": null,
+      "recurring_due": "By 1 May each year, starting the year after the LLC is formed",
+      "by_year_usd": [
+        45,
+        150,
+        150
+      ],
+      "three_year_usd": {
+        "low": 345,
+        "high": 495,
+        "high_if": "formed after 1 May"
+      },
+      "five_year_usd": {
+        "low": 645,
+        "high": 795,
+        "high_if": "formed after 1 May"
+      },
+      "newspaper_notice": false,
+      "owners_on_public_record": true,
+      "filing_office": {
+        "name": "Arkansas Secretary of State",
+        "url": "https://www.sos.arkansas.gov/business-commercial-services-bcs/forms-fees/llc"
+      },
+      "checked": "2026-10-16",
+      "state_page": "https://baseacross.com/llc/arkansas"
+    },
+    {
+      "state": "California",
+      "code": "CA",
+      "filing_fee": 70,
+      "recurring_charge": "$800 a year",
+      "recurring_extra": null,
+      "recurring_due": "By the 15th day of the fourth month after you file, and then by the 15th day of the fourth month of each tax year, which is 15 April for most companies",
+      "by_year_usd": [
+        890,
+        800,
+        820
+      ],
+      "three_year_usd": {
+        "low": 2510,
+        "high": 3310,
+        "high_if": "formed after 15 April (for a calendar-year company)"
+      },
+      "five_year_usd": {
+        "low": 4130,
+        "high": 4930,
+        "high_if": "formed after 15 April (for a calendar-year company)"
+      },
+      "newspaper_notice": false,
+      "owners_on_public_record": true,
+      "filing_office": {
+        "name": "California Secretary of State",
+        "url": "https://www.sos.ca.gov/business-programs/business-entities/starting-business/types"
+      },
+      "checked": "2026-10-17",
+      "state_page": "https://baseacross.com/llc/california"
+    },
+    {
+      "state": "Colorado",
+      "code": "CO",
+      "filing_fee": 50,
+      "recurring_charge": "$25 a year",
+      "recurring_extra": null,
+      "recurring_due": "Each year in the assigned Periodic report month, with penalty-free filing from two months before through two months after; check the entity Summary page",
+      "by_year_usd": [
+        50,
+        25,
+        25
+      ],
+      "three_year_usd": {
+        "low": 100,
+        "high": 100,
+        "high_if": null
+      },
+      "five_year_usd": {
+        "low": 150,
+        "high": 150,
+        "high_if": null
+      },
+      "newspaper_notice": false,
+      "owners_on_public_record": false,
+      "filing_office": {
+        "name": "Colorado Secretary of State",
+        "url": "https://www.coloradosos.gov/pubs/business/forms_main.html"
+      },
+      "checked": "2026-10-17",
+      "state_page": "https://baseacross.com/llc/colorado"
+    },
+    {
+      "state": "Connecticut",
+      "code": "CT",
+      "filing_fee": 120,
+      "recurring_charge": "$80 a year",
+      "recurring_extra": null,
+      "recurring_due": "Between 1 January and 31 March each year, starting the year after the LLC is formed",
+      "by_year_usd": [
+        120,
+        80,
+        80
+      ],
+      "three_year_usd": {
+        "low": 280,
+        "high": 360,
+        "high_if": "formed after 31 March"
+      },
+      "five_year_usd": {
+        "low": 440,
+        "high": 520,
+        "high_if": "formed after 31 March"
+      },
+      "newspaper_notice": false,
+      "owners_on_public_record": false,
+      "filing_office": {
+        "name": "Connecticut Secretary of the State",
+        "url": "https://business.ct.gov/knowledge-base/articles/domestic-limited-liability-companies-forms-and-fees"
+      },
+      "checked": "2026-10-17",
+      "state_page": "https://baseacross.com/llc/connecticut"
+    },
+    {
+      "state": "Delaware",
+      "code": "DE",
+      "filing_fee": 110,
+      "recurring_charge": "$400 a year",
+      "recurring_extra": null,
+      "recurring_due": "By 1 June each year, as the annual LLC tax",
+      "by_year_usd": [
+        110,
+        400,
+        400
+      ],
+      "three_year_usd": {
+        "low": 910,
+        "high": 1310,
+        "high_if": "formed after 1 June"
+      },
+      "five_year_usd": {
+        "low": 1710,
+        "high": 2110,
+        "high_if": "formed after 1 June"
+      },
+      "newspaper_notice": false,
+      "owners_on_public_record": false,
+      "filing_office": {
+        "name": "Delaware Division of Corporations",
+        "url": "https://corp.delaware.gov/howtoform/"
+      },
+      "checked": "2026-10-17",
+      "state_page": "https://baseacross.com/llc/delaware"
+    },
+    {
+      "state": "District of Columbia",
+      "code": "DC",
+      "filing_fee": 99,
+      "recurring_charge": "$300 every two years",
+      "recurring_extra": null,
+      "recurring_due": "By 1 April every second year, starting the year after the LLC is formed",
+      "by_year_usd": [
+        99,
+        300,
+        0
+      ],
+      "three_year_usd": {
+        "low": 399,
+        "high": 699,
+        "high_if": "formed after 1 April"
+      },
+      "five_year_usd": {
+        "low": 699,
+        "high": 999,
+        "high_if": "formed after 1 April"
+      },
+      "newspaper_notice": false,
+      "owners_on_public_record": false,
+      "filing_office": {
+        "name": "DC Department of Licensing and Consumer Protection",
+        "url": "https://dlcp.dc.gov/service/domestic-limited-liability-company"
+      },
+      "checked": "2026-10-17",
+      "state_page": "https://baseacross.com/llc/district-of-columbia"
+    },
+    {
+      "state": "Florida",
+      "code": "FL",
+      "filing_fee": 125,
+      "recurring_charge": "$138.75 a year",
+      "recurring_extra": null,
+      "recurring_due": "Between 1 January and 1 May each year, starting the year after the LLC is formed",
+      "by_year_usd": [
+        125,
+        138.75,
+        138.75
+      ],
+      "three_year_usd": {
+        "low": 402.5,
+        "high": 541.25,
+        "high_if": "formed after 1 May"
+      },
+      "five_year_usd": {
+        "low": 680,
+        "high": 818.75,
+        "high_if": "formed after 1 May"
+      },
+      "newspaper_notice": false,
+      "owners_on_public_record": false,
+      "filing_office": {
+        "name": "Florida Division of Corporations (Sunbiz)",
+        "url": "https://dos.fl.gov/sunbiz/start-business/efile/fl-llc/"
+      },
+      "checked": "2026-10-17",
+      "state_page": "https://baseacross.com/llc/florida"
+    },
+    {
+      "state": "Georgia",
+      "code": "GA",
+      "filing_fee": 110,
+      "recurring_charge": "$60 a year",
+      "recurring_extra": null,
+      "recurring_due": "Between 1 January and 1 April each year, starting the year after the LLC is formed",
+      "by_year_usd": [
+        110,
+        60,
+        60
+      ],
+      "three_year_usd": {
+        "low": 230,
+        "high": 290,
+        "high_if": "formed after 1 April"
+      },
+      "five_year_usd": {
+        "low": 350,
+        "high": 410,
+        "high_if": "formed after 1 April"
+      },
+      "newspaper_notice": false,
+      "owners_on_public_record": true,
+      "filing_office": {
+        "name": "Georgia Secretary of State",
+        "url": "https://sos.ga.gov/how-to-guide/how-guide-register-domestic-entity"
+      },
+      "checked": "2026-10-17",
+      "state_page": "https://baseacross.com/llc/georgia"
+    },
+    {
+      "state": "Hawaii",
+      "code": "HI",
+      "filing_fee": 51,
+      "recurring_charge": "$15 a year",
+      "recurring_extra": null,
+      "recurring_due": "By the end of the calendar quarter that holds the anniversary of the LLC's registration, each year starting the year after",
+      "by_year_usd": [
+        51,
+        15,
+        15
+      ],
+      "three_year_usd": {
+        "low": 81,
+        "high": 81,
+        "high_if": null
+      },
+      "five_year_usd": {
+        "low": 111,
+        "high": 111,
+        "high_if": null
+      },
+      "newspaper_notice": false,
+      "owners_on_public_record": true,
+      "filing_office": {
+        "name": "Hawaii Business Registration Division",
+        "url": "https://www.cca.hawaii.gov/breg/"
+      },
+      "checked": "2026-10-17",
+      "state_page": "https://baseacross.com/llc/hawaii"
+    },
+    {
+      "state": "Idaho",
+      "code": "ID",
+      "filing_fee": 100,
+      "recurring_charge": "No fee, filed yearly",
+      "recurring_extra": null,
+      "recurring_due": "By the end of the month the LLC was formed in, each year starting the year after",
+      "by_year_usd": [
+        100,
+        0,
+        0
+      ],
+      "three_year_usd": {
+        "low": 100,
+        "high": 100,
+        "high_if": null
+      },
+      "five_year_usd": {
+        "low": 100,
+        "high": 100,
+        "high_if": null
+      },
+      "newspaper_notice": false,
+      "owners_on_public_record": false,
+      "filing_office": {
+        "name": "Idaho Secretary of State",
+        "url": "https://sos.idaho.gov/business-forms/"
+      },
+      "checked": "2026-10-17",
+      "state_page": "https://baseacross.com/llc/idaho"
+    },
+    {
+      "state": "Illinois",
+      "code": "IL",
+      "filing_fee": 150,
+      "recurring_charge": "$75 a year",
+      "recurring_extra": null,
+      "recurring_due": "Before the first day of the month the LLC was formed in, each year starting the year after",
+      "by_year_usd": [
+        150,
+        75,
+        75
+      ],
+      "three_year_usd": {
+        "low": 300,
+        "high": 300,
+        "high_if": null
+      },
+      "five_year_usd": {
+        "low": 450,
+        "high": 450,
+        "high_if": null
+      },
+      "newspaper_notice": false,
+      "owners_on_public_record": false,
+      "filing_office": {
+        "name": "Illinois Secretary of State",
+        "url": "https://apps.ilsos.gov/llcarticles/generalProvisions.do"
+      },
+      "checked": "2026-10-17",
+      "state_page": "https://baseacross.com/llc/illinois"
+    },
+    {
+      "state": "Indiana",
+      "code": "IN",
+      "filing_fee": 95,
+      "recurring_charge": "$32 every two years",
+      "recurring_extra": null,
+      "recurring_due": "In the month the LLC was formed, every second year, starting two years after formation",
+      "by_year_usd": [
+        95,
+        0,
+        32
+      ],
+      "three_year_usd": {
+        "low": 127,
+        "high": 127,
+        "high_if": null
+      },
+      "five_year_usd": {
+        "low": 159,
+        "high": 159,
+        "high_if": null
+      },
+      "newspaper_notice": false,
+      "owners_on_public_record": false,
+      "filing_office": {
+        "name": "Indiana Secretary of State (INBiz)",
+        "url": "https://www.in.gov/sos/business/division-forms/business-forms/"
+      },
+      "checked": "2026-10-17",
+      "state_page": "https://baseacross.com/llc/indiana"
+    },
+    {
+      "state": "Iowa",
+      "code": "IA",
+      "filing_fee": 50,
+      "recurring_charge": "$30 every two years",
+      "recurring_extra": null,
+      "recurring_due": "Between 1 January and 1 April of each odd-numbered year, starting the first odd year after the LLC is formed",
+      "by_year_usd": [
+        50,
+        30,
+        0
+      ],
+      "three_year_usd": {
+        "low": 80,
+        "high": 110,
+        "high_if": "formed after 1 April in an even year"
+      },
+      "five_year_usd": {
+        "low": 110,
+        "high": 140,
+        "high_if": "formed after 1 April in an even year"
+      },
+      "newspaper_notice": false,
+      "owners_on_public_record": false,
+      "filing_office": {
+        "name": "Iowa Secretary of State",
+        "url": "https://sos.iowa.gov/businesses/business-entity-forms-and-fees"
+      },
+      "checked": "2026-10-17",
+      "state_page": "https://baseacross.com/llc/iowa"
+    },
+    {
+      "state": "Kansas",
+      "code": "KS",
+      "filing_fee": 85,
+      "recurring_charge": "$90 every two years",
+      "recurring_extra": null,
+      "recurring_due": "By 15 April in each succeeding year matching formation-year parity; a 2026 LLC first reports in 2028",
+      "by_year_usd": [
+        85,
+        0,
+        90
+      ],
+      "three_year_usd": {
+        "low": 175,
+        "high": 175,
+        "high_if": null
+      },
+      "five_year_usd": {
+        "low": 265,
+        "high": 265,
+        "high_if": null
+      },
+      "newspaper_notice": false,
+      "owners_on_public_record": true,
+      "filing_office": {
+        "name": "Kansas Secretary of State",
+        "url": "https://sos.ks.gov/"
+      },
+      "checked": "2026-10-17",
+      "state_page": "https://baseacross.com/llc/kansas"
+    },
+    {
+      "state": "Kentucky",
+      "code": "KY",
+      "filing_fee": 40,
+      "recurring_charge": "$190 a year",
+      "recurring_extra": null,
+      "recurring_due": "Between 1 January and 30 June each year, starting the calendar year after formation",
+      "by_year_usd": [
+        215,
+        190,
+        190
+      ],
+      "three_year_usd": {
+        "low": 595,
+        "high": 610,
+        "high_if": "formed after 30 June"
+      },
+      "five_year_usd": {
+        "low": 975,
+        "high": 990,
+        "high_if": "formed after 30 June"
+      },
+      "newspaper_notice": false,
+      "owners_on_public_record": true,
+      "filing_office": {
+        "name": "Kentucky Secretary of State",
+        "url": "https://www.sos.ky.gov/"
+      },
+      "checked": "2026-10-17",
+      "state_page": "https://baseacross.com/llc/kentucky"
+    },
+    {
+      "state": "Louisiana",
+      "code": "LA",
+      "filing_fee": 125,
+      "recurring_charge": "$35 a year",
+      "recurring_extra": null,
+      "recurring_due": "By the anniversary of the LLC's formation each year, starting the year after",
+      "by_year_usd": [
+        125,
+        35,
+        35
+      ],
+      "three_year_usd": {
+        "low": 195,
+        "high": 195,
+        "high_if": null
+      },
+      "five_year_usd": {
+        "low": 265,
+        "high": 265,
+        "high_if": null
+      },
+      "newspaper_notice": false,
+      "owners_on_public_record": true,
+      "filing_office": {
+        "name": "Louisiana Secretary of State",
+        "url": "https://www.sos.la.gov/business-services/forms-fee-schedule"
+      },
+      "checked": "2026-10-16",
+      "state_page": "https://baseacross.com/llc/louisiana"
+    },
+    {
+      "state": "Maine",
+      "code": "ME",
+      "filing_fee": 175,
+      "recurring_charge": "$85 a year",
+      "recurring_extra": null,
+      "recurring_due": "Between 1 January and 1 June each year, starting the year after the LLC is formed",
+      "by_year_usd": [
+        175,
+        85,
+        85
+      ],
+      "three_year_usd": {
+        "low": 345,
+        "high": 430,
+        "high_if": "formed after 1 June"
+      },
+      "five_year_usd": {
+        "low": 515,
+        "high": 600,
+        "high_if": "formed after 1 June"
+      },
+      "newspaper_notice": false,
+      "owners_on_public_record": false,
+      "filing_office": {
+        "name": "Maine Secretary of State",
+        "url": "https://www.maine.gov/sos/"
+      },
+      "checked": "2026-10-17",
+      "state_page": "https://baseacross.com/llc/maine"
+    },
+    {
+      "state": "Maryland",
+      "code": "MD",
+      "filing_fee": 100,
+      "recurring_charge": "$300 a year",
+      "recurring_extra": null,
+      "recurring_due": "By 15 April each year, starting the calendar year after formation",
+      "by_year_usd": [
+        100,
+        300,
+        300
+      ],
+      "three_year_usd": {
+        "low": 700,
+        "high": 1000,
+        "high_if": "formed after 15 April"
+      },
+      "five_year_usd": {
+        "low": 1300,
+        "high": 1600,
+        "high_if": "formed after 15 April"
+      },
+      "newspaper_notice": false,
+      "owners_on_public_record": false,
+      "filing_office": {
+        "name": "Maryland State Department of Assessments and Taxation",
+        "url": "https://dat.maryland.gov/"
+      },
+      "checked": "2026-10-17",
+      "state_page": "https://baseacross.com/llc/maryland"
+    },
+    {
+      "state": "Massachusetts",
+      "code": "MA",
+      "filing_fee": 520,
+      "recurring_charge": "$520 a year",
+      "recurring_extra": null,
+      "recurring_due": "By the anniversary of the LLC's formation each year, starting the year after",
+      "by_year_usd": [
+        520,
+        520,
+        520
+      ],
+      "three_year_usd": {
+        "low": 1560,
+        "high": 1560,
+        "high_if": null
+      },
+      "five_year_usd": {
+        "low": 2600,
+        "high": 2600,
+        "high_if": null
+      },
+      "newspaper_notice": false,
+      "owners_on_public_record": true,
+      "filing_office": {
+        "name": "Massachusetts Secretary of the Commonwealth",
+        "url": "https://www.sec.state.ma.us/"
+      },
+      "checked": "2026-10-17",
+      "state_page": "https://baseacross.com/llc/massachusetts"
+    },
+    {
+      "state": "Michigan",
+      "code": "MI",
+      "filing_fee": 50,
+      "recurring_charge": "$25 a year",
+      "recurring_extra": null,
+      "recurring_due": "By 15 February each year, starting the year after the LLC is formed, or a year later if it was formed after 30 September",
+      "by_year_usd": [
+        50,
+        25,
+        25
+      ],
+      "three_year_usd": {
+        "low": 100,
+        "high": 125,
+        "high_if": "formed after 15 February and by 30 September"
+      },
+      "five_year_usd": {
+        "low": 150,
+        "high": 175,
+        "high_if": "formed after 15 February and by 30 September"
+      },
+      "newspaper_notice": false,
+      "owners_on_public_record": false,
+      "filing_office": {
+        "name": "Michigan LARA · current corporation filing FAQ",
+        "url": "https://www.michigan.gov/lara/bureau-list/cscl/corps/frequently-asked-questions"
+      },
+      "checked": "2026-10-17",
+      "state_page": "https://baseacross.com/llc/michigan"
+    },
+    {
+      "state": "Minnesota",
+      "code": "MN",
+      "filing_fee": 155,
+      "recurring_charge": "No fee, filed yearly",
+      "recurring_extra": null,
+      "recurring_due": "By 31 December each year, starting the year after the LLC is formed",
+      "by_year_usd": [
+        155,
+        0,
+        0
+      ],
+      "three_year_usd": {
+        "low": 155,
+        "high": 155,
+        "high_if": null
+      },
+      "five_year_usd": {
+        "low": 155,
+        "high": 155,
+        "high_if": null
+      },
+      "newspaper_notice": false,
+      "owners_on_public_record": true,
+      "filing_office": {
+        "name": "Minnesota Secretary of State · LLC forms",
+        "url": "https://www.sos.mn.gov/business-liens/business-forms-fees/minnesota-limited-liability-company-forms"
+      },
+      "checked": "2026-10-17",
+      "state_page": "https://baseacross.com/llc/minnesota"
+    },
+    {
+      "state": "Mississippi",
+      "code": "MS",
+      "filing_fee": 50,
+      "recurring_charge": "No fee, filed yearly",
+      "recurring_extra": null,
+      "recurring_due": "Between 1 January and 15 April each year, starting the year after the LLC is formed",
+      "by_year_usd": [
+        50,
+        0,
+        0
+      ],
+      "three_year_usd": {
+        "low": 50,
+        "high": 50,
+        "high_if": null
+      },
+      "five_year_usd": {
+        "low": 50,
+        "high": 50,
+        "high_if": null
+      },
+      "newspaper_notice": false,
+      "owners_on_public_record": true,
+      "filing_office": {
+        "name": "Mississippi Secretary of State · business FAQ",
+        "url": "https://www.sos.ms.gov/business-services/business-faqs"
+      },
+      "checked": "2026-10-17",
+      "state_page": "https://baseacross.com/llc/mississippi"
+    },
+    {
+      "state": "Missouri",
+      "code": "MO",
+      "filing_fee": 50,
+      "recurring_charge": "None",
+      "recurring_extra": null,
+      "recurring_due": "Missouri LLCs file no annual report",
+      "by_year_usd": [
+        50,
+        0,
+        0
+      ],
+      "three_year_usd": {
+        "low": 50,
+        "high": 50,
+        "high_if": null
+      },
+      "five_year_usd": {
+        "low": 50,
+        "high": 50,
+        "high_if": null
+      },
+      "newspaper_notice": false,
+      "owners_on_public_record": false,
+      "filing_office": {
+        "name": "Missouri Secretary of State · business FAQ",
+        "url": "https://s1.sos.mo.gov/business/faqs"
+      },
+      "checked": "2026-10-17",
+      "state_page": "https://baseacross.com/llc/missouri"
+    },
+    {
+      "state": "Montana",
+      "code": "MT",
+      "filing_fee": 35,
+      "recurring_charge": "$20 a year",
+      "recurring_extra": null,
+      "recurring_due": "By 15 April each year, starting the year after the LLC is formed",
+      "by_year_usd": [
+        35,
+        20,
+        20
+      ],
+      "three_year_usd": {
+        "low": 75,
+        "high": 95,
+        "high_if": "formed after 15 April"
+      },
+      "five_year_usd": {
+        "low": 115,
+        "high": 135,
+        "high_if": "formed after 15 April"
+      },
+      "newspaper_notice": false,
+      "owners_on_public_record": true,
+      "filing_office": {
+        "name": "Montana Secretary of State · business services",
+        "url": "https://sosmt.gov/business/"
+      },
+      "checked": "2026-10-17",
+      "state_page": "https://baseacross.com/llc/montana"
+    },
+    {
+      "state": "Nebraska",
+      "code": "NE",
+      "filing_fee": 100,
+      "recurring_charge": "$25 every two years",
+      "recurring_extra": null,
+      "recurring_due": "By April 1 in odd-numbered years, starting the first odd year after formation",
+      "by_year_usd": [
+        125,
+        25,
+        0
+      ],
+      "three_year_usd": {
+        "low": 150,
+        "high": 175,
+        "high_if": "formed after 1 April in an even year"
+      },
+      "five_year_usd": {
+        "low": 175,
+        "high": 200,
+        "high_if": "formed after 1 April in an even year"
+      },
+      "newspaper_notice": true,
+      "owners_on_public_record": false,
+      "filing_office": {
+        "name": "Nebraska Secretary of State · current forms and fees",
+        "url": "https://sos.nebraska.gov/business-services/forms-and-fee-information"
+      },
+      "checked": "2026-10-17",
+      "state_page": "https://baseacross.com/llc/nebraska"
+    },
+    {
+      "state": "Nevada",
+      "code": "NV",
+      "filing_fee": 425,
+      "recurring_charge": "$350 a year",
+      "recurring_extra": null,
+      "recurring_due": "By the last day of the month the LLC was formed in, each year starting the year after",
+      "by_year_usd": [
+        425,
+        350,
+        350
+      ],
+      "three_year_usd": {
+        "low": 1125,
+        "high": 1125,
+        "high_if": null
+      },
+      "five_year_usd": {
+        "low": 1825,
+        "high": 1825,
+        "high_if": null
+      },
+      "newspaper_notice": false,
+      "owners_on_public_record": true,
+      "filing_office": {
+        "name": "Nevada Secretary of State · current ORION guidance",
+        "url": "https://nvsos.gov/sos/"
+      },
+      "checked": "2026-10-17",
+      "state_page": "https://baseacross.com/llc/nevada"
+    },
+    {
+      "state": "New Hampshire",
+      "code": "NH",
+      "filing_fee": 102,
+      "recurring_charge": "$102 a year",
+      "recurring_extra": null,
+      "recurring_due": "By April 1 each year, beginning the calendar year after formation",
+      "by_year_usd": [
+        102,
+        102,
+        102
+      ],
+      "three_year_usd": {
+        "low": 306,
+        "high": 408,
+        "high_if": "formed after 1 April"
+      },
+      "five_year_usd": {
+        "low": 510,
+        "high": 612,
+        "high_if": "formed after 1 April"
+      },
+      "newspaper_notice": false,
+      "owners_on_public_record": true,
+      "filing_office": {
+        "name": "New Hampshire Secretary of State · LLC forms and fees",
+        "url": "https://www.sos.nh.gov/corporations-0/forms-and-fees/limited-liability-companies"
+      },
+      "checked": "2026-10-17",
+      "state_page": "https://baseacross.com/llc/new-hampshire"
+    },
+    {
+      "state": "New Jersey",
+      "code": "NJ",
+      "filing_fee": 100,
+      "recurring_charge": "$75 a year",
+      "recurring_extra": null,
+      "recurring_due": "By the last day of the month the LLC was formed in, each year starting the year after",
+      "by_year_usd": [
+        100,
+        75,
+        75
+      ],
+      "three_year_usd": {
+        "low": 250,
+        "high": 250,
+        "high_if": null
+      },
+      "five_year_usd": {
+        "low": 400,
+        "high": 400,
+        "high_if": null
+      },
+      "newspaper_notice": false,
+      "owners_on_public_record": true,
+      "filing_office": {
+        "name": "New Jersey DORES · current business registration steps",
+        "url": "https://www.nj.gov/treasury/revenue/gettingregistered.shtml"
+      },
+      "checked": "2026-10-17",
+      "state_page": "https://baseacross.com/llc/new-jersey"
+    },
+    {
+      "state": "New Mexico",
+      "code": "NM",
+      "filing_fee": 50,
+      "recurring_charge": "None",
+      "recurring_extra": null,
+      "recurring_due": "New Mexico LLCs file no annual report and pay no annual fee",
+      "by_year_usd": [
+        50,
+        0,
+        0
+      ],
+      "three_year_usd": {
+        "low": 50,
+        "high": 50,
+        "high_if": null
+      },
+      "five_year_usd": {
+        "low": 50,
+        "high": 50,
+        "high_if": null
+      },
+      "newspaper_notice": false,
+      "owners_on_public_record": false,
+      "filing_office": {
+        "name": "New Mexico Secretary of State · online business services",
+        "url": "https://www.sos.nm.gov/business-services/"
+      },
+      "checked": "2026-10-17",
+      "state_page": "https://baseacross.com/llc/new-mexico"
+    },
+    {
+      "state": "New York",
+      "code": "NY",
+      "filing_fee": 200,
+      "recurring_charge": "$9 every two years",
+      "recurring_extra": null,
+      "recurring_due": "In the formation month every two years, starting two years after formation",
+      "by_year_usd": [
+        250,
+        0,
+        9
+      ],
+      "three_year_usd": {
+        "low": 259,
+        "high": 259,
+        "high_if": null
+      },
+      "five_year_usd": {
+        "low": 268,
+        "high": 268,
+        "high_if": null
+      },
+      "newspaper_notice": true,
+      "owners_on_public_record": false,
+      "filing_office": {
+        "name": "New York DOS · official LLC formation guidance",
+        "url": "https://dos.ny.gov/forming-limited-liability-company-new-york"
+      },
+      "checked": "2026-10-17",
+      "state_page": "https://baseacross.com/llc/new-york"
+    },
+    {
+      "state": "North Carolina",
+      "code": "NC",
+      "filing_fee": 125,
+      "recurring_charge": "$203 a year",
+      "recurring_extra": null,
+      "recurring_due": "By April 15 each year, starting the year after formation",
+      "by_year_usd": [
+        125,
+        203,
+        203
+      ],
+      "three_year_usd": {
+        "low": 531,
+        "high": 734,
+        "high_if": "formed after 15 April"
+      },
+      "five_year_usd": {
+        "low": 937,
+        "high": 1140,
+        "high_if": "formed after 15 April"
+      },
+      "newspaper_notice": false,
+      "owners_on_public_record": true,
+      "filing_office": {
+        "name": "North Carolina SOS · LLC forms and fees",
+        "url": "https://www.sosnc.gov/fees/by_title/_Business_Registration"
+      },
+      "checked": "2026-10-17",
+      "state_page": "https://baseacross.com/llc/north-carolina"
+    },
+    {
+      "state": "North Dakota",
+      "code": "ND",
+      "filing_fee": 135,
+      "recurring_charge": "$50 a year",
+      "recurring_extra": null,
+      "recurring_due": "By November 15 each year, starting the year after ordinary LLC formation",
+      "by_year_usd": [
+        135,
+        50,
+        50
+      ],
+      "three_year_usd": {
+        "low": 235,
+        "high": 285,
+        "high_if": "formed after 15 November"
+      },
+      "five_year_usd": {
+        "low": 335,
+        "high": 385,
+        "high_if": "formed after 15 November"
+      },
+      "newspaper_notice": false,
+      "owners_on_public_record": true,
+      "filing_office": {
+        "name": "North Dakota SOS · LLC categories and fees",
+        "url": "https://www.sos.nd.gov/business/business-services/business-structures/limited-liability-company-llc"
+      },
+      "checked": "2026-10-17",
+      "state_page": "https://baseacross.com/llc/north-dakota"
+    },
+    {
+      "state": "Ohio",
+      "code": "OH",
+      "filing_fee": 99,
+      "recurring_charge": "None",
+      "recurring_extra": null,
+      "recurring_due": "Ohio LLCs file no annual report",
+      "by_year_usd": [
+        99,
+        0,
+        0
+      ],
+      "three_year_usd": {
+        "low": 99,
+        "high": 99,
+        "high_if": null
+      },
+      "five_year_usd": {
+        "low": 99,
+        "high": 99,
+        "high_if": null
+      },
+      "newspaper_notice": false,
+      "owners_on_public_record": false,
+      "filing_office": {
+        "name": "Ohio SOS · current forms and fee schedule",
+        "url": "https://www.ohiosos.gov/business/business-filing-forms"
+      },
+      "checked": "2026-10-17",
+      "state_page": "https://baseacross.com/llc/ohio"
+    },
+    {
+      "state": "Oklahoma",
+      "code": "OK",
+      "filing_fee": 100,
+      "recurring_charge": "$25 a year",
+      "recurring_extra": null,
+      "recurring_due": "On the actual formation anniversary date each year, starting the following year",
+      "by_year_usd": [
+        100,
+        25,
+        25
+      ],
+      "three_year_usd": {
+        "low": 150,
+        "high": 150,
+        "high_if": null
+      },
+      "five_year_usd": {
+        "low": 200,
+        "high": 200,
+        "high_if": null
+      },
+      "newspaper_notice": false,
+      "owners_on_public_record": true,
+      "filing_office": {
+        "name": "Oklahoma SOS · forms and fee schedule",
+        "url": "https://www.sos.ok.gov/business/forms.aspx"
+      },
+      "checked": "2026-10-17",
+      "state_page": "https://baseacross.com/llc/oklahoma"
+    },
+    {
+      "state": "Oregon",
+      "code": "OR",
+      "filing_fee": 100,
+      "recurring_charge": "$100 a year",
+      "recurring_extra": null,
+      "recurring_due": "On the original filing anniversary each year, starting the following year",
+      "by_year_usd": [
+        100,
+        100,
+        100
+      ],
+      "three_year_usd": {
+        "low": 300,
+        "high": 300,
+        "high_if": null
+      },
+      "five_year_usd": {
+        "low": 500,
+        "high": 500,
+        "high_if": null
+      },
+      "newspaper_notice": false,
+      "owners_on_public_record": true,
+      "filing_office": {
+        "name": "Oregon SOS · ordinary domestic LLC filing",
+        "url": "https://sos.oregon.gov/business/register/pages/domestic-limited-liability-companies-forms.aspx"
+      },
+      "checked": "2026-10-17",
+      "state_page": "https://baseacross.com/llc/oregon"
+    },
+    {
+      "state": "Pennsylvania",
+      "code": "PA",
+      "filing_fee": 125,
+      "recurring_charge": "$7 a year",
+      "recurring_extra": null,
+      "recurring_due": "By September 30 each year, starting the calendar year after formation",
+      "by_year_usd": [
+        125,
+        7,
+        7
+      ],
+      "three_year_usd": {
+        "low": 139,
+        "high": 146,
+        "high_if": "formed after 30 September"
+      },
+      "five_year_usd": {
+        "low": 153,
+        "high": 160,
+        "high_if": "formed after 30 September"
+      },
+      "newspaper_notice": false,
+      "owners_on_public_record": true,
+      "filing_office": {
+        "name": "Pennsylvania DOS · current annual-report rules",
+        "url": "https://www.pa.gov/agencies/dos/programs/business/types-of-filings-and-registrations/annual-reports"
+      },
+      "checked": "2026-10-17",
+      "state_page": "https://baseacross.com/llc/pennsylvania"
+    },
+    {
+      "state": "Rhode Island",
+      "code": "RI",
+      "filing_fee": 150,
+      "recurring_charge": "$450 a year",
+      "recurring_extra": null,
+      "recurring_due": "February 1 through May 1 each year, starting the calendar year after registration",
+      "by_year_usd": [
+        550,
+        450,
+        450
+      ],
+      "three_year_usd": {
+        "low": 1450,
+        "high": 1500,
+        "high_if": "formed after 1 May"
+      },
+      "five_year_usd": {
+        "low": 2350,
+        "high": 2400,
+        "high_if": "formed after 1 May"
+      },
+      "newspaper_notice": false,
+      "owners_on_public_record": true,
+      "filing_office": {
+        "name": "Rhode Island DOS · costs and annual tax",
+        "url": "https://www.sos.ri.gov/divisions/business-services/business-basics/costs-and-fees"
+      },
+      "checked": "2026-10-17",
+      "state_page": "https://baseacross.com/llc/rhode-island"
+    },
+    {
+      "state": "South Carolina",
+      "code": "SC",
+      "filing_fee": 125,
+      "recurring_charge": "None",
+      "recurring_extra": null,
+      "recurring_due": "No ordinary noncorporate LLC SOS annual report; corporate-taxed LLCs review the separate SCDOR report/licence regime",
+      "by_year_usd": [
+        125,
+        0,
+        0
+      ],
+      "three_year_usd": {
+        "low": 125,
+        "high": 125,
+        "high_if": null
+      },
+      "five_year_usd": {
+        "low": 125,
+        "high": 125,
+        "high_if": null
+      },
+      "newspaper_notice": false,
+      "owners_on_public_record": true,
+      "filing_office": {
+        "name": "South Carolina SOS · official business filing route",
+        "url": "https://sos.sc.gov/online-filings/business-entities/file-and-search-online"
+      },
+      "checked": "2026-10-17",
+      "state_page": "https://baseacross.com/llc/south-carolina"
+    },
+    {
+      "state": "South Dakota",
+      "code": "SD",
+      "filing_fee": 150,
+      "recurring_charge": "$55 a year",
+      "recurring_extra": null,
+      "recurring_due": "Follow the actual selected 2027 schedule: anniversary-month or January 31 route under the law effective January 1, 2027",
+      "by_year_usd": [
+        150,
+        55,
+        55
+      ],
+      "three_year_usd": {
+        "low": 260,
+        "high": 260,
+        "high_if": null
+      },
+      "five_year_usd": {
+        "low": 370,
+        "high": 370,
+        "high_if": null
+      },
+      "newspaper_notice": false,
+      "owners_on_public_record": true,
+      "filing_office": {
+        "name": "South Dakota SOS · current official fee schedule",
+        "url": "https://www.sdsos.gov/general-information/filing-fees.aspx"
+      },
+      "checked": "2026-10-17",
+      "state_page": "https://baseacross.com/llc/south-dakota"
+    },
+    {
+      "state": "Tennessee",
+      "code": "TN",
+      "filing_fee": 300,
+      "recurring_charge": "$400 a year",
+      "recurring_extra": null,
+      "recurring_due": "First day of the fourth month after financial year-end; April 1 for calendar-year companies",
+      "by_year_usd": [
+        400,
+        400,
+        400
+      ],
+      "three_year_usd": {
+        "low": 1200,
+        "high": 1500,
+        "high_if": "formed after 1 April (for a calendar-year company)"
+      },
+      "five_year_usd": {
+        "low": 2000,
+        "high": 2300,
+        "high_if": "formed after 1 April (for a calendar-year company)"
+      },
+      "newspaper_notice": false,
+      "owners_on_public_record": true,
+      "filing_office": {
+        "name": "Tennessee SOS · current filing FAQs",
+        "url": "https://sos.tn.gov/businesses/faqs"
+      },
+      "checked": "2026-10-17",
+      "state_page": "https://baseacross.com/llc/tennessee"
+    },
+    {
+      "state": "Texas",
+      "code": "TX",
+      "filing_fee": 300,
+      "recurring_charge": "No fee, filed yearly",
+      "recurring_extra": null,
+      "recurring_due": "Normal May 15 reporting schedule, starting the year after formation; confirm actual weekend/holiday adjustments",
+      "by_year_usd": [
+        300,
+        0,
+        0
+      ],
+      "three_year_usd": {
+        "low": 300,
+        "high": 300,
+        "high_if": null
+      },
+      "five_year_usd": {
+        "low": 300,
+        "high": 300,
+        "high_if": null
+      },
+      "newspaper_notice": false,
+      "owners_on_public_record": true,
+      "filing_office": {
+        "name": "Texas SOS · official forms and filing routes",
+        "url": "https://www.sos.state.tx.us/corp/forms_boc.shtml"
+      },
+      "checked": "2026-10-17",
+      "state_page": "https://baseacross.com/llc/texas"
+    },
+    {
+      "state": "Utah",
+      "code": "UT",
+      "filing_fee": 59,
+      "recurring_charge": "$18 a year",
+      "recurring_extra": null,
+      "recurring_due": "Default anniversary-month-end under §16-1a-212 effective October 1, 2026, unless a Division rule provides otherwise; verify actual first renewal",
+      "by_year_usd": [
+        59,
+        18,
+        18
+      ],
+      "three_year_usd": {
+        "low": 95,
+        "high": 95,
+        "high_if": null
+      },
+      "five_year_usd": {
+        "low": 131,
+        "high": 131,
+        "high_if": null
+      },
+      "newspaper_notice": false,
+      "owners_on_public_record": true,
+      "filing_office": {
+        "name": "Utah Division · current business filing routes",
+        "url": "https://commerce.utah.gov/corporations/"
+      },
+      "checked": "2026-10-17",
+      "state_page": "https://baseacross.com/llc/utah"
+    },
+    {
+      "state": "Vermont",
+      "code": "VT",
+      "filing_fee": 155,
+      "recurring_charge": "$45 a year",
+      "recurring_extra": null,
+      "recurring_due": "Within three months after financial year-end; March 31 for a calendar-year company",
+      "by_year_usd": [
+        155,
+        45,
+        45
+      ],
+      "three_year_usd": {
+        "low": 245,
+        "high": 290,
+        "high_if": "formed after 31 March (for a calendar-year company)"
+      },
+      "five_year_usd": {
+        "low": 335,
+        "high": 380,
+        "high_if": "formed after 31 March (for a calendar-year company)"
+      },
+      "newspaper_notice": false,
+      "owners_on_public_record": false,
+      "filing_office": {
+        "name": "Vermont SOS · current fees and statutes",
+        "url": "https://sos.vermont.gov/business-services/fees-statutes"
+      },
+      "checked": "2026-10-17",
+      "state_page": "https://baseacross.com/llc/vermont"
+    },
+    {
+      "state": "Virginia",
+      "code": "VA",
+      "filing_fee": 100,
+      "recurring_charge": "$50 a year",
+      "recurring_extra": null,
+      "recurring_due": "Last day of the anniversary month, starting the year after formation; payment must be received by the deadline",
+      "by_year_usd": [
+        100,
+        50,
+        50
+      ],
+      "three_year_usd": {
+        "low": 200,
+        "high": 200,
+        "high_if": null
+      },
+      "five_year_usd": {
+        "low": 300,
+        "high": 300,
+        "high_if": null
+      },
+      "newspaper_notice": false,
+      "owners_on_public_record": false,
+      "filing_office": {
+        "name": "Virginia SCC · LLC forms and fees",
+        "url": "https://www.scc.virginia.gov/businesses/forms-and-fees/virginia-limited-liability-companies/"
+      },
+      "checked": "2026-10-17",
+      "state_page": "https://baseacross.com/llc/virginia"
+    },
+    {
+      "state": "Washington",
+      "code": "WA",
+      "filing_fee": 200,
+      "recurring_charge": "$70 a year",
+      "recurring_extra": null,
+      "recurring_due": "By the entity expiration date, normally the last day of the anniversary month, starting the following year",
+      "by_year_usd": [
+        200,
+        70,
+        70
+      ],
+      "three_year_usd": {
+        "low": 340,
+        "high": 340,
+        "high_if": null
+      },
+      "five_year_usd": {
+        "low": 480,
+        "high": 480,
+        "high_if": null
+      },
+      "newspaper_notice": false,
+      "owners_on_public_record": true,
+      "filing_office": {
+        "name": "Washington SOS · current LLC filing resource",
+        "url": "https://www.sos.wa.gov/corporations-charities/business-entities/limited-liability-company-llc-professional-llc-pllc-filing-resource-page"
+      },
+      "checked": "2026-10-17",
+      "state_page": "https://baseacross.com/llc/washington"
+    },
+    {
+      "state": "West Virginia",
+      "code": "WV",
+      "filing_fee": 100,
+      "recurring_charge": "$25 a year",
+      "recurring_extra": null,
+      "recurring_due": "By 11:59 PM June 30; new companies start annually, with a later qualifying biennial election",
+      "by_year_usd": [
+        130,
+        25,
+        25
+      ],
+      "three_year_usd": {
+        "low": 180,
+        "high": 205,
+        "high_if": "formed after 30 June"
+      },
+      "five_year_usd": {
+        "low": 230,
+        "high": 255,
+        "high_if": "formed after 30 June"
+      },
+      "newspaper_notice": false,
+      "owners_on_public_record": true,
+      "filing_office": {
+        "name": "West Virginia SOS · current LLC formation resource",
+        "url": "https://sos.wv.gov/document-search/west-virginia-articles-organization-limited-liability-company"
+      },
+      "checked": "2026-10-17",
+      "state_page": "https://baseacross.com/llc/west-virginia"
+    },
+    {
+      "state": "Wisconsin",
+      "code": "WI",
+      "filing_fee": 130,
+      "recurring_charge": "$25 a year",
+      "recurring_extra": null,
+      "recurring_due": "By the end of the formation quarter each year after formation; an October 2026 domestic LLC normally first reports by December 31, 2027",
+      "by_year_usd": [
+        130,
+        25,
+        25
+      ],
+      "three_year_usd": {
+        "low": 180,
+        "high": 180,
+        "high_if": null
+      },
+      "five_year_usd": {
+        "low": 230,
+        "high": 230,
+        "high_if": null
+      },
+      "newspaper_notice": false,
+      "owners_on_public_record": true,
+      "filing_office": {
+        "name": "Wisconsin DFI · current business filing routes",
+        "url": "https://dfi.wi.gov/Pages/BusinessServices/BusinessEntities/FileOnline.aspx"
+      },
+      "checked": "2026-10-17",
+      "state_page": "https://baseacross.com/llc/wisconsin"
+    },
+    {
+      "state": "Wyoming",
+      "code": "WY",
+      "filing_fee": 102.4,
+      "recurring_charge": "$60 a year",
+      "recurring_extra": "Plus a 2.4% card fee online",
+      "recurring_due": "First day of the anniversary month, starting the year after formation; October 17, 2026 normally first reports by October 1, 2027",
+      "by_year_usd": [
+        102.4,
+        60,
+        60
+      ],
+      "three_year_usd": {
+        "low": 222.4,
+        "high": 222.4,
+        "high_if": null
+      },
+      "five_year_usd": {
+        "low": 342.4,
+        "high": 342.4,
+        "high_if": null
+      },
+      "newspaper_notice": false,
+      "owners_on_public_record": false,
+      "filing_office": {
+        "name": "Wyoming SOS · official business resources",
+        "url": "https://sos.wyo.gov/Business/Default.aspx"
+      },
+      "checked": "2026-10-17",
+      "state_page": "https://baseacross.com/llc/wyoming"
+    }
+  ]
+}

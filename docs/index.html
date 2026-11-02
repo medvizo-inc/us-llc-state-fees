@@ -1,0 +1,506 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>US LLC state fees: every state's filing fee and annual cost (open data)</title>
+    <meta name="description" content="Open data on what all 50 states and DC charge to form and keep an LLC: filing fee, annual report or tax, due date and five-year total. CSV and JSON, CC BY 4.0." />
+    <link rel="canonical" href="https://medvizo-inc.github.io/us-llc-state-fees/" />
+    <meta property="og:title" content="US LLC state fees: open data for all 50 states and DC" />
+    <meta property="og:description" content="Filing fee, annual report or tax, due date and five-year total for every state. CSV and JSON, CC BY 4.0." />
+    <meta property="og:type" content="website" />
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"Dataset","name":"US LLC state fees","description":"What each US state and DC charges to form an LLC and to keep it: the filing fee, the recurring report or tax, when it falls due, and the state's own totals over three and five years. State charges only.","url":"https://medvizo-inc.github.io/us-llc-state-fees/","license":"https://creativecommons.org/licenses/by/4.0/","creator":{"@type":"Organization","name":"BaseAcross","url":"https://baseacross.com"},"isBasedOn":"https://baseacross.com/tools/llc-fees-by-state","temporalCoverage":"2026","spatialCoverage":"United States","dateModified":"2026-10-17","distribution":[{"@type":"DataDownload","encodingFormat":"text/csv","contentUrl":"https://medvizo-inc.github.io/us-llc-state-fees/data/us-llc-state-fees.csv"},{"@type":"DataDownload","encodingFormat":"application/json","contentUrl":"https://medvizo-inc.github.io/us-llc-state-fees/data/us-llc-state-fees.json"}]}</script>
+    <style>
+      :root { --bg: #f9f8f4; --card: #fff; --text: #0c1b3a; --muted: #545d70; --line: #e6e4dd; --brass: #e0ac3c; --brass-text: #7a5a10; }
+      @media (prefers-color-scheme: dark) { :root { --bg: #0b1630; --card: #112040; --text: #f4f2ec; --muted: #a7afc2; --line: #22335a; --brass-text: #e9c26d; } }
+      * { box-sizing: border-box; }
+      body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+      a { color: var(--brass-text); }
+      .wrap { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+      header { padding: 48px 0 20px; }
+      .eyebrow { color: var(--brass-text); font-size: 13px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; margin: 0 0 10px; }
+      h1 { font-size: clamp(28px, 4.5vw, 42px); line-height: 1.15; letter-spacing: -.02em; margin: 0 0 14px; }
+      .lede { color: var(--muted); font-size: 18px; max-width: 760px; margin: 0 0 20px; }
+      .actions { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 8px; }
+      .btn { display: inline-block; padding: 9px 16px; border-radius: 10px; font-weight: 600; text-decoration: none; border: 1px solid var(--line); color: var(--text); background: var(--card); }
+      .btn.primary { background: var(--brass); border-color: var(--brass); color: #0c1b3a; }
+      .facts { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin: 24px 0; }
+      .fact { background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 14px 16px; }
+      .fact b { display: block; font-size: 22px; }
+      .fact span { color: var(--muted); font-size: 14px; }
+      input[type=search] { width: 100%; max-width: 360px; padding: 10px 12px; border-radius: 10px; border: 1px solid var(--line); background: var(--card); color: var(--text); font: inherit; margin: 6px 0 14px; }
+      .table { overflow-x: auto; border: 1px solid var(--line); border-radius: 12px; background: var(--card); }
+      table { width: 100%; border-collapse: collapse; min-width: 860px; }
+      th, td { text-align: left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid var(--line); }
+      thead th { font-size: 12px; text-transform: uppercase; letter-spacing: .06em; color: var(--muted); position: sticky; top: 0; background: var(--card); }
+      tbody tr:last-child th, tbody tr:last-child td { border-bottom: 0; }
+      .num { font-variant-numeric: tabular-nums; white-space: nowrap; }
+      small { color: var(--muted); }
+      section { padding: 30px 0; }
+      h2 { font-size: 22px; margin: 0 0 10px; }
+      footer { border-top: 1px solid var(--line); padding: 26px 0 44px; color: var(--muted); font-size: 15px; }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <header>
+        <p class="eyebrow">Open data · CC BY 4.0</p>
+        <h1>What every US state charges to form and keep an LLC</h1>
+        <p class="lede">The filing fee, the recurring report or tax, when it falls due, and the state's own total over five years, for all 50 states and DC. Each row names the filing office it was checked against, and the day. State charges only: no registered agent, no service fee.</p>
+        <div class="actions">
+          <a class="btn primary" href="data/us-llc-state-fees.csv" download>Download CSV</a>
+          <a class="btn" href="data/us-llc-state-fees.json">JSON</a>
+          <a class="btn" href="https://github.com/medvizo-inc/us-llc-state-fees">GitHub</a>
+        </div>
+        <div class="facts">
+          <div class="fact"><b>$50</b><span>Lowest five-year state cost: Arizona</span></div>
+          <div class="fact"><b>$4,930</b><span>Highest five-year state cost: California</span></div>
+          <div class="fact"><b>2026-10-16 to 2026-10-17</b><span>When the figures were checked</span></div>
+        </div>
+      </header>
+
+      <label for="q" class="sr">Find a state</label>
+      <input id="q" type="search" placeholder="Find a state" autocomplete="off" />
+      <div class="table">
+        <table>
+          <thead>
+            <tr><th scope="col">State</th><th scope="col">Filing fee</th><th scope="col">Recurring charge</th><th scope="col">When it's due</th><th scope="col">Five years</th><th scope="col">Source</th></tr>
+          </thead>
+          <tbody>
+        <tr id="al" data-name="alabama al">
+          <th scope="row"><a href="https://baseacross.com/llc/alabama">Alabama</a></th>
+          <td class="num">$200</td>
+          <td>None</td>
+          <td><small>An Alabama LLC files and pays the Business Privilege Tax only in a year the tax works out above $100</small></td>
+          <td class="num">$225</td>
+          <td><small><a href="https://www.sos.alabama.gov/business-entities/llcs" rel="nofollow">Alabama Secretary of State</a><br>Checked 2026-10-16</small></td>
+        </tr>
+        <tr id="ak" data-name="alaska ak">
+          <th scope="row"><a href="https://baseacross.com/llc/alaska">Alaska</a></th>
+          <td class="num">$250</td>
+          <td>$100 every two years</td>
+          <td><small>By January 2 every second year on the creation-year cycle; a 2026 formation first reports in 2028</small></td>
+          <td class="num">$700</td>
+          <td><small><a href="https://www.commerce.alaska.gov/web/cbpl/" rel="nofollow">Alaska Division of Corporations, Business and Professional Licensing</a><br>Checked 2026-10-16</small></td>
+        </tr>
+        <tr id="az" data-name="arizona az">
+          <th scope="row"><a href="https://baseacross.com/llc/arizona">Arizona</a></th>
+          <td class="num">$50</td>
+          <td>None</td>
+          <td><small>Arizona LLCs file no annual report</small></td>
+          <td class="num">$50</td>
+          <td><small><a href="https://azcc.gov/" rel="nofollow">Arizona Corporation Commission</a><br>Checked 2026-10-16</small></td>
+        </tr>
+        <tr id="ar" data-name="arkansas ar">
+          <th scope="row"><a href="https://baseacross.com/llc/arkansas">Arkansas</a></th>
+          <td class="num">$45</td>
+          <td>$150 a year</td>
+          <td><small>By 1 May each year, starting the year after the LLC is formed</small></td>
+          <td class="num">$645 to $795</td>
+          <td><small><a href="https://www.sos.arkansas.gov/business-commercial-services-bcs/forms-fees/llc" rel="nofollow">Arkansas Secretary of State</a><br>Checked 2026-10-16</small></td>
+        </tr>
+        <tr id="ca" data-name="california ca">
+          <th scope="row"><a href="https://baseacross.com/llc/california">California</a></th>
+          <td class="num">$70</td>
+          <td>$800 a year</td>
+          <td><small>By the 15th day of the fourth month after you file, and then by the 15th day of the fourth month of each tax year, which is 15 April for most companies</small></td>
+          <td class="num">$4,130 to $4,930</td>
+          <td><small><a href="https://www.sos.ca.gov/business-programs/business-entities/starting-business/types" rel="nofollow">California Secretary of State</a><br>Checked 2026-10-17</small></td>
+        </tr>
+        <tr id="co" data-name="colorado co">
+          <th scope="row"><a href="https://baseacross.com/llc/colorado">Colorado</a></th>
+          <td class="num">$50</td>
+          <td>$25 a year</td>
+          <td><small>Each year in the assigned Periodic report month, with penalty-free filing from two months before through two months after; check the entity Summary page</small></td>
+          <td class="num">$150</td>
+          <td><small><a href="https://www.coloradosos.gov/pubs/business/forms_main.html" rel="nofollow">Colorado Secretary of State</a><br>Checked 2026-10-17</small></td>
+        </tr>
+        <tr id="ct" data-name="connecticut ct">
+          <th scope="row"><a href="https://baseacross.com/llc/connecticut">Connecticut</a></th>
+          <td class="num">$120</td>
+          <td>$80 a year</td>
+          <td><small>Between 1 January and 31 March each year, starting the year after the LLC is formed</small></td>
+          <td class="num">$440 to $520</td>
+          <td><small><a href="https://business.ct.gov/knowledge-base/articles/domestic-limited-liability-companies-forms-and-fees" rel="nofollow">Connecticut Secretary of the State</a><br>Checked 2026-10-17</small></td>
+        </tr>
+        <tr id="de" data-name="delaware de">
+          <th scope="row"><a href="https://baseacross.com/llc/delaware">Delaware</a></th>
+          <td class="num">$110</td>
+          <td>$400 a year</td>
+          <td><small>By 1 June each year, as the annual LLC tax</small></td>
+          <td class="num">$1,710 to $2,110</td>
+          <td><small><a href="https://corp.delaware.gov/howtoform/" rel="nofollow">Delaware Division of Corporations</a><br>Checked 2026-10-17</small></td>
+        </tr>
+        <tr id="dc" data-name="district of columbia dc">
+          <th scope="row"><a href="https://baseacross.com/llc/district-of-columbia">District of Columbia</a></th>
+          <td class="num">$99</td>
+          <td>$300 every two years</td>
+          <td><small>By 1 April every second year, starting the year after the LLC is formed</small></td>
+          <td class="num">$699 to $999</td>
+          <td><small><a href="https://dlcp.dc.gov/service/domestic-limited-liability-company" rel="nofollow">DC Department of Licensing and Consumer Protection</a><br>Checked 2026-10-17</small></td>
+        </tr>
+        <tr id="fl" data-name="florida fl">
+          <th scope="row"><a href="https://baseacross.com/llc/florida">Florida</a></th>
+          <td class="num">$125</td>
+          <td>$138.75 a year</td>
+          <td><small>Between 1 January and 1 May each year, starting the year after the LLC is formed</small></td>
+          <td class="num">$680 to $818.75</td>
+          <td><small><a href="https://dos.fl.gov/sunbiz/start-business/efile/fl-llc/" rel="nofollow">Florida Division of Corporations (Sunbiz)</a><br>Checked 2026-10-17</small></td>
+        </tr>
+        <tr id="ga" data-name="georgia ga">
+          <th scope="row"><a href="https://baseacross.com/llc/georgia">Georgia</a></th>
+          <td class="num">$110</td>
+          <td>$60 a year</td>
+          <td><small>Between 1 January and 1 April each year, starting the year after the LLC is formed</small></td>
+          <td class="num">$350 to $410</td>
+          <td><small><a href="https://sos.ga.gov/how-to-guide/how-guide-register-domestic-entity" rel="nofollow">Georgia Secretary of State</a><br>Checked 2026-10-17</small></td>
+        </tr>
+        <tr id="hi" data-name="hawaii hi">
+          <th scope="row"><a href="https://baseacross.com/llc/hawaii">Hawaii</a></th>
+          <td class="num">$51</td>
+          <td>$15 a year</td>
+          <td><small>By the end of the calendar quarter that holds the anniversary of the LLC's registration, each year starting the year after</small></td>
+          <td class="num">$111</td>
+          <td><small><a href="https://www.cca.hawaii.gov/breg/" rel="nofollow">Hawaii Business Registration Division</a><br>Checked 2026-10-17</small></td>
+        </tr>
+        <tr id="id" data-name="idaho id">
+          <th scope="row"><a href="https://baseacross.com/llc/idaho">Idaho</a></th>
+          <td class="num">$100</td>
+          <td>No fee, filed yearly</td>
+          <td><small>By the end of the month the LLC was formed in, each year starting the year after</small></td>
+          <td class="num">$100</td>
+          <td><small><a href="https://sos.idaho.gov/business-forms/" rel="nofollow">Idaho Secretary of State</a><br>Checked 2026-10-17</small></td>
+        </tr>
+        <tr id="il" data-name="illinois il">
+          <th scope="row"><a href="https://baseacross.com/llc/illinois">Illinois</a></th>
+          <td class="num">$150</td>
+          <td>$75 a year</td>
+          <td><small>Before the first day of the month the LLC was formed in, each year starting the year after</small></td>
+          <td class="num">$450</td>
+          <td><small><a href="https://apps.ilsos.gov/llcarticles/generalProvisions.do" rel="nofollow">Illinois Secretary of State</a><br>Checked 2026-10-17</small></td>
+        </tr>
+        <tr id="in" data-name="indiana in">
+          <th scope="row"><a href="https://baseacross.com/llc/indiana">Indiana</a></th>
+          <td class="num">$95</td>
+          <td>$32 every two years</td>
+          <td><small>In the month the LLC was formed, every second year, starting two years after formation</small></td>
+          <td class="num">$159</td>
+          <td><small><a href="https://www.in.gov/sos/business/division-forms/business-forms/" rel="nofollow">Indiana Secretary of State (INBiz)</a><br>Checked 2026-10-17</small></td>
+        </tr>
+        <tr id="ia" data-name="iowa ia">
+          <th scope="row"><a href="https://baseacross.com/llc/iowa">Iowa</a></th>
+          <td class="num">$50</td>
+          <td>$30 every two years</td>
+          <td><small>Between 1 January and 1 April of each odd-numbered year, starting the first odd year after the LLC is formed</small></td>
+          <td class="num">$110 to $140</td>
+          <td><small><a href="https://sos.iowa.gov/businesses/business-entity-forms-and-fees" rel="nofollow">Iowa Secretary of State</a><br>Checked 2026-10-17</small></td>
+        </tr>
+        <tr id="ks" data-name="kansas ks">
+          <th scope="row"><a href="https://baseacross.com/llc/kansas">Kansas</a></th>
+          <td class="num">$85</td>
+          <td>$90 every two years</td>
+          <td><small>By 15 April in each succeeding year matching formation-year parity; a 2026 LLC first reports in 2028</small></td>
+          <td class="num">$265</td>
+          <td><small><a href="https://sos.ks.gov/" rel="nofollow">Kansas Secretary of State</a><br>Checked 2026-10-17</small></td>
+        </tr>
+        <tr id="ky" data-name="kentucky ky">
+          <th scope="row"><a href="https://baseacross.com/llc/kentucky">Kentucky</a></th>
+          <td class="num">$40</td>
+          <td>$190 a year</td>
+          <td><small>Between 1 January and 30 June each year, starting the calendar year after formation</small></td>
+          <td class="num">$975 to $990</td>
+          <td><small><a href="https://www.sos.ky.gov/" rel="nofollow">Kentucky Secretary of State</a><br>Checked 2026-10-17</small></td>
+        </tr>
+        <tr id="la" data-name="louisiana la">
+          <th scope="row"><a href="https://baseacross.com/llc/louisiana">Louisiana</a></th>
+          <td class="num">$125</td>
+          <td>$35 a year</td>
+          <td><small>By the anniversary of the LLC's formation each year, starting the year after</small></td>
+          <td class="num">$265</td>
+          <td><small><a href="https://www.sos.la.gov/business-services/forms-fee-schedule" rel="nofollow">Louisiana Secretary of State</a><br>Checked 2026-10-16</small></td>
+        </tr>
+        <tr id="me" data-name="maine me">
+          <th scope="row"><a href="https://baseacross.com/llc/maine">Maine</a></th>
+          <td class="num">$175</td>
+          <td>$85 a year</td>
+          <td><small>Between 1 January and 1 June each year, starting the year after the LLC is formed</small></td>
+          <td class="num">$515 to $600</td>
+          <td><small><a href="https://www.maine.gov/sos/" rel="nofollow">Maine Secretary of State</a><br>Checked 2026-10-17</small></td>
+        </tr>
+        <tr id="md" data-name="maryland md">
+          <th scope="row"><a href="https://baseacross.com/llc/maryland">Maryland</a></th>
+          <td class="num">$100</td>
+          <td>$300 a year</td>
+          <td><small>By 15 April each year, starting the calendar year after formation</small></td>
+          <td class="num">$1,300 to $1,600</td>
+          <td><small><a href="https://dat.maryland.gov/" rel="nofollow">Maryland State Department of Assessments and Taxation</a><br>Checked 2026-10-17</small></td>
+        </tr>
+        <tr id="ma" data-name="massachusetts ma">
+          <th scope="row"><a href="https://baseacross.com/llc/massachusetts">Massachusetts</a></th>
+          <td class="num">$520</td>
+          <td>$520 a year</td>
+          <td><small>By the anniversary of the LLC's formation each year, starting the year after</small></td>
+          <td class="num">$2,600</td>
+          <td><small><a href="https://www.sec.state.ma.us/" rel="nofollow">Massachusetts Secretary of the Commonwealth</a><br>Checked 2026-10-17</small></td>
+        </tr>
+        <tr id="mi" data-name="michigan mi">
+          <th scope="row"><a href="https://baseacross.com/llc/michigan">Michigan</a></th>
+          <td class="num">$50</td>
+          <td>$25 a year</td>
+          <td><small>By 15 February each year, starting the year after the LLC is formed, or a year later if it was formed after 30 September</small></td>
+          <td class="num">$150 to $175</td>
+          <td><small><a href="https://www.michigan.gov/lara/bureau-list/cscl/corps/frequently-asked-questions" rel="nofollow">Michigan LARA · current corporation filing FAQ</a><br>Checked 2026-10-17</small></td>
+        </tr>
+        <tr id="mn" data-name="minnesota mn">
+          <th scope="row"><a href="https://baseacross.com/llc/minnesota">Minnesota</a></th>
+          <td class="num">$155</td>
+          <td>No fee, filed yearly</td>
+          <td><small>By 31 December each year, starting the year after the LLC is formed</small></td>
+          <td class="num">$155</td>
+          <td><small><a href="https://www.sos.mn.gov/business-liens/business-forms-fees/minnesota-limited-liability-company-forms" rel="nofollow">Minnesota Secretary of State · LLC forms</a><br>Checked 2026-10-17</small></td>
+        </tr>
+        <tr id="ms" data-name="mississippi ms">
+          <th scope="row"><a href="https://baseacross.com/llc/mississippi">Mississippi</a></th>
+          <td class="num">$50</td>
+          <td>No fee, filed yearly</td>
+          <td><small>Between 1 January and 15 April each year, starting the year after the LLC is formed</small></td>
+          <td class="num">$50</td>
+          <td><small><a href="https://www.sos.ms.gov/business-services/business-faqs" rel="nofollow">Mississippi Secretary of State · business FAQ</a><br>Checked 2026-10-17</small></td>
+        </tr>
+        <tr id="mo" data-name="missouri mo">
+          <th scope="row"><a href="https://baseacross.com/llc/missouri">Missouri</a></th>
+          <td class="num">$50</td>
+          <td>None</td>
+          <td><small>Missouri LLCs file no annual report</small></td>
+          <td class="num">$50</td>
+          <td><small><a href="https://s1.sos.mo.gov/business/faqs" rel="nofollow">Missouri Secretary of State · business FAQ</a><br>Checked 2026-10-17</small></td>
+        </tr>
+        <tr id="mt" data-name="montana mt">
+          <th scope="row"><a href="https://baseacross.com/llc/montana">Montana</a></th>
+          <td class="num">$35</td>
+          <td>$20 a year</td>
+          <td><small>By 15 April each year, starting the year after the LLC is formed</small></td>
+          <td class="num">$115 to $135</td>
+          <td><small><a href="https://sosmt.gov/business/" rel="nofollow">Montana Secretary of State · business services</a><br>Checked 2026-10-17</small></td>
+        </tr>
+        <tr id="ne" data-name="nebraska ne">
+          <th scope="row"><a href="https://baseacross.com/llc/nebraska">Nebraska</a></th>
+          <td class="num">$100</td>
+          <td>$25 every two years</td>
+          <td><small>By April 1 in odd-numbered years, starting the first odd year after formation</small></td>
+          <td class="num">$175 to $200</td>
+          <td><small><a href="https://sos.nebraska.gov/business-services/forms-and-fee-information" rel="nofollow">Nebraska Secretary of State · current forms and fees</a><br>Checked 2026-10-17</small></td>
+        </tr>
+        <tr id="nv" data-name="nevada nv">
+          <th scope="row"><a href="https://baseacross.com/llc/nevada">Nevada</a></th>
+          <td class="num">$425</td>
+          <td>$350 a year</td>
+          <td><small>By the last day of the month the LLC was formed in, each year starting the year after</small></td>
+          <td class="num">$1,825</td>
+          <td><small><a href="https://nvsos.gov/sos/" rel="nofollow">Nevada Secretary of State · current ORION guidance</a><br>Checked 2026-10-17</small></td>
+        </tr>
+        <tr id="nh" data-name="new hampshire nh">
+          <th scope="row"><a href="https://baseacross.com/llc/new-hampshire">New Hampshire</a></th>
+          <td class="num">$102</td>
+          <td>$102 a year</td>
+          <td><small>By April 1 each year, beginning the calendar year after formation</small></td>
+          <td class="num">$510 to $612</td>
+          <td><small><a href="https://www.sos.nh.gov/corporations-0/forms-and-fees/limited-liability-companies" rel="nofollow">New Hampshire Secretary of State · LLC forms and fees</a><br>Checked 2026-10-17</small></td>
+        </tr>
+        <tr id="nj" data-name="new jersey nj">
+          <th scope="row"><a href="https://baseacross.com/llc/new-jersey">New Jersey</a></th>
+          <td class="num">$100</td>
+          <td>$75 a year</td>
+          <td><small>By the last day of the month the LLC was formed in, each year starting the year after</small></td>
+          <td class="num">$400</td>
+          <td><small><a href="https://www.nj.gov/treasury/revenue/gettingregistered.shtml" rel="nofollow">New Jersey DORES · current business registration steps</a><br>Checked 2026-10-17</small></td>
+        </tr>
+        <tr id="nm" data-name="new mexico nm">
+          <th scope="row"><a href="https://baseacross.com/llc/new-mexico">New Mexico</a></th>
+          <td class="num">$50</td>
+          <td>None</td>
+          <td><small>New Mexico LLCs file no annual report and pay no annual fee</small></td>
+          <td class="num">$50</td>
+          <td><small><a href="https://www.sos.nm.gov/business-services/" rel="nofollow">New Mexico Secretary of State · online business services</a><br>Checked 2026-10-17</small></td>
+        </tr>
+        <tr id="ny" data-name="new york ny">
+          <th scope="row"><a href="https://baseacross.com/llc/new-york">New York</a></th>
+          <td class="num">$200</td>
+          <td>$9 every two years</td>
+          <td><small>In the formation month every two years, starting two years after formation</small></td>
+          <td class="num">$268</td>
+          <td><small><a href="https://dos.ny.gov/forming-limited-liability-company-new-york" rel="nofollow">New York DOS · official LLC formation guidance</a><br>Checked 2026-10-17</small></td>
+        </tr>
+        <tr id="nc" data-name="north carolina nc">
+          <th scope="row"><a href="https://baseacross.com/llc/north-carolina">North Carolina</a></th>
+          <td class="num">$125</td>
+          <td>$203 a year</td>
+          <td><small>By April 15 each year, starting the year after formation</small></td>
+          <td class="num">$937 to $1,140</td>
+          <td><small><a href="https://www.sosnc.gov/fees/by_title/_Business_Registration" rel="nofollow">North Carolina SOS · LLC forms and fees</a><br>Checked 2026-10-17</small></td>
+        </tr>
+        <tr id="nd" data-name="north dakota nd">
+          <th scope="row"><a href="https://baseacross.com/llc/north-dakota">North Dakota</a></th>
+          <td class="num">$135</td>
+          <td>$50 a year</td>
+          <td><small>By November 15 each year, starting the year after ordinary LLC formation</small></td>
+          <td class="num">$335 to $385</td>
+          <td><small><a href="https://www.sos.nd.gov/business/business-services/business-structures/limited-liability-company-llc" rel="nofollow">North Dakota SOS · LLC categories and fees</a><br>Checked 2026-10-17</small></td>
+        </tr>
+        <tr id="oh" data-name="ohio oh">
+          <th scope="row"><a href="https://baseacross.com/llc/ohio">Ohio</a></th>
+          <td class="num">$99</td>
+          <td>None</td>
+          <td><small>Ohio LLCs file no annual report</small></td>
+          <td class="num">$99</td>
+          <td><small><a href="https://www.ohiosos.gov/business/business-filing-forms" rel="nofollow">Ohio SOS · current forms and fee schedule</a><br>Checked 2026-10-17</small></td>
+        </tr>
+        <tr id="ok" data-name="oklahoma ok">
+          <th scope="row"><a href="https://baseacross.com/llc/oklahoma">Oklahoma</a></th>
+          <td class="num">$100</td>
+          <td>$25 a year</td>
+          <td><small>On the actual formation anniversary date each year, starting the following year</small></td>
+          <td class="num">$200</td>
+          <td><small><a href="https://www.sos.ok.gov/business/forms.aspx" rel="nofollow">Oklahoma SOS · forms and fee schedule</a><br>Checked 2026-10-17</small></td>
+        </tr>
+        <tr id="or" data-name="oregon or">
+          <th scope="row"><a href="https://baseacross.com/llc/oregon">Oregon</a></th>
+          <td class="num">$100</td>
+          <td>$100 a year</td>
+          <td><small>On the original filing anniversary each year, starting the following year</small></td>
+          <td class="num">$500</td>
+          <td><small><a href="https://sos.oregon.gov/business/register/pages/domestic-limited-liability-companies-forms.aspx" rel="nofollow">Oregon SOS · ordinary domestic LLC filing</a><br>Checked 2026-10-17</small></td>
+        </tr>
+        <tr id="pa" data-name="pennsylvania pa">
+          <th scope="row"><a href="https://baseacross.com/llc/pennsylvania">Pennsylvania</a></th>
+          <td class="num">$125</td>
+          <td>$7 a year</td>
+          <td><small>By September 30 each year, starting the calendar year after formation</small></td>
+          <td class="num">$153 to $160</td>
+          <td><small><a href="https://www.pa.gov/agencies/dos/programs/business/types-of-filings-and-registrations/annual-reports" rel="nofollow">Pennsylvania DOS · current annual-report rules</a><br>Checked 2026-10-17</small></td>
+        </tr>
+        <tr id="ri" data-name="rhode island ri">
+          <th scope="row"><a href="https://baseacross.com/llc/rhode-island">Rhode Island</a></th>
+          <td class="num">$150</td>
+          <td>$450 a year</td>
+          <td><small>February 1 through May 1 each year, starting the calendar year after registration</small></td>
+          <td class="num">$2,350 to $2,400</td>
+          <td><small><a href="https://www.sos.ri.gov/divisions/business-services/business-basics/costs-and-fees" rel="nofollow">Rhode Island DOS · costs and annual tax</a><br>Checked 2026-10-17</small></td>
+        </tr>
+        <tr id="sc" data-name="south carolina sc">
+          <th scope="row"><a href="https://baseacross.com/llc/south-carolina">South Carolina</a></th>
+          <td class="num">$125</td>
+          <td>None</td>
+          <td><small>No ordinary noncorporate LLC SOS annual report; corporate-taxed LLCs review the separate SCDOR report/licence regime</small></td>
+          <td class="num">$125</td>
+          <td><small><a href="https://sos.sc.gov/online-filings/business-entities/file-and-search-online" rel="nofollow">South Carolina SOS · official business filing route</a><br>Checked 2026-10-17</small></td>
+        </tr>
+        <tr id="sd" data-name="south dakota sd">
+          <th scope="row"><a href="https://baseacross.com/llc/south-dakota">South Dakota</a></th>
+          <td class="num">$150</td>
+          <td>$55 a year</td>
+          <td><small>Follow the actual selected 2027 schedule: anniversary-month or January 31 route under the law effective January 1, 2027</small></td>
+          <td class="num">$370</td>
+          <td><small><a href="https://www.sdsos.gov/general-information/filing-fees.aspx" rel="nofollow">South Dakota SOS · current official fee schedule</a><br>Checked 2026-10-17</small></td>
+        </tr>
+        <tr id="tn" data-name="tennessee tn">
+          <th scope="row"><a href="https://baseacross.com/llc/tennessee">Tennessee</a></th>
+          <td class="num">$300</td>
+          <td>$400 a year</td>
+          <td><small>First day of the fourth month after financial year-end; April 1 for calendar-year companies</small></td>
+          <td class="num">$2,000 to $2,300</td>
+          <td><small><a href="https://sos.tn.gov/businesses/faqs" rel="nofollow">Tennessee SOS · current filing FAQs</a><br>Checked 2026-10-17</small></td>
+        </tr>
+        <tr id="tx" data-name="texas tx">
+          <th scope="row"><a href="https://baseacross.com/llc/texas">Texas</a></th>
+          <td class="num">$300</td>
+          <td>No fee, filed yearly</td>
+          <td><small>Normal May 15 reporting schedule, starting the year after formation; confirm actual weekend/holiday adjustments</small></td>
+          <td class="num">$300</td>
+          <td><small><a href="https://www.sos.state.tx.us/corp/forms_boc.shtml" rel="nofollow">Texas SOS · official forms and filing routes</a><br>Checked 2026-10-17</small></td>
+        </tr>
+        <tr id="ut" data-name="utah ut">
+          <th scope="row"><a href="https://baseacross.com/llc/utah">Utah</a></th>
+          <td class="num">$59</td>
+          <td>$18 a year</td>
+          <td><small>Default anniversary-month-end under §16-1a-212 effective October 1, 2026, unless a Division rule provides otherwise; verify actual first renewal</small></td>
+          <td class="num">$131</td>
+          <td><small><a href="https://commerce.utah.gov/corporations/" rel="nofollow">Utah Division · current business filing routes</a><br>Checked 2026-10-17</small></td>
+        </tr>
+        <tr id="vt" data-name="vermont vt">
+          <th scope="row"><a href="https://baseacross.com/llc/vermont">Vermont</a></th>
+          <td class="num">$155</td>
+          <td>$45 a year</td>
+          <td><small>Within three months after financial year-end; March 31 for a calendar-year company</small></td>
+          <td class="num">$335 to $380</td>
+          <td><small><a href="https://sos.vermont.gov/business-services/fees-statutes" rel="nofollow">Vermont SOS · current fees and statutes</a><br>Checked 2026-10-17</small></td>
+        </tr>
+        <tr id="va" data-name="virginia va">
+          <th scope="row"><a href="https://baseacross.com/llc/virginia">Virginia</a></th>
+          <td class="num">$100</td>
+          <td>$50 a year</td>
+          <td><small>Last day of the anniversary month, starting the year after formation; payment must be received by the deadline</small></td>
+          <td class="num">$300</td>
+          <td><small><a href="https://www.scc.virginia.gov/businesses/forms-and-fees/virginia-limited-liability-companies/" rel="nofollow">Virginia SCC · LLC forms and fees</a><br>Checked 2026-10-17</small></td>
+        </tr>
+        <tr id="wa" data-name="washington wa">
+          <th scope="row"><a href="https://baseacross.com/llc/washington">Washington</a></th>
+          <td class="num">$200</td>
+          <td>$70 a year</td>
+          <td><small>By the entity expiration date, normally the last day of the anniversary month, starting the following year</small></td>
+          <td class="num">$480</td>
+          <td><small><a href="https://www.sos.wa.gov/corporations-charities/business-entities/limited-liability-company-llc-professional-llc-pllc-filing-resource-page" rel="nofollow">Washington SOS · current LLC filing resource</a><br>Checked 2026-10-17</small></td>
+        </tr>
+        <tr id="wv" data-name="west virginia wv">
+          <th scope="row"><a href="https://baseacross.com/llc/west-virginia">West Virginia</a></th>
+          <td class="num">$100</td>
+          <td>$25 a year</td>
+          <td><small>By 11:59 PM June 30; new companies start annually, with a later qualifying biennial election</small></td>
+          <td class="num">$230 to $255</td>
+          <td><small><a href="https://sos.wv.gov/document-search/west-virginia-articles-organization-limited-liability-company" rel="nofollow">West Virginia SOS · current LLC formation resource</a><br>Checked 2026-10-17</small></td>
+        </tr>
+        <tr id="wi" data-name="wisconsin wi">
+          <th scope="row"><a href="https://baseacross.com/llc/wisconsin">Wisconsin</a></th>
+          <td class="num">$130</td>
+          <td>$25 a year</td>
+          <td><small>By the end of the formation quarter each year after formation; an October 2026 domestic LLC normally first reports by December 31, 2027</small></td>
+          <td class="num">$230</td>
+          <td><small><a href="https://dfi.wi.gov/Pages/BusinessServices/BusinessEntities/FileOnline.aspx" rel="nofollow">Wisconsin DFI · current business filing routes</a><br>Checked 2026-10-17</small></td>
+        </tr>
+        <tr id="wy" data-name="wyoming wy">
+          <th scope="row"><a href="https://baseacross.com/llc/wyoming">Wyoming</a></th>
+          <td class="num">$102.40</td>
+          <td>$60 a year<br><small>Plus a 2.4% card fee online</small></td>
+          <td><small>First day of the anniversary month, starting the year after formation; October 17, 2026 normally first reports by October 1, 2027</small></td>
+          <td class="num">$342.40</td>
+          <td><small><a href="https://sos.wyo.gov/Business/Default.aspx" rel="nofollow">Wyoming SOS · official business resources</a><br>Checked 2026-10-17</small></td>
+        </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <section>
+        <h2>How to read it</h2>
+        <p>Five years counts an LLC formed in January. Where a charge falls on a fixed date, forming later in the year can add one payment inside the period, so a range shows the least and the most. Late fees, franchise taxes that depend on income, and city or county licences are left out. Each state's name links to a full guide on <a href="https://baseacross.com">BaseAcross</a>, and the <a href="https://baseacross.com/tools/llc-fees-by-state">interactive fee table</a> compares any formation month.</p>
+      </section>
+
+      <section>
+        <h2>Use it</h2>
+        <p>The data is under <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>: use it anywhere, including commercially, with a link to <a href="https://baseacross.com/tools/llc-fees-by-state">BaseAcross's LLC fees by state</a>. Corrections are welcome as a <a href="https://github.com/medvizo-inc/us-llc-state-fees/issues">GitHub issue</a> with the state's own source.</p>
+      </section>
+
+      <footer>
+        <p>Published by <a href="https://baseacross.com">BaseAcross</a>, which forms and runs US LLCs and C-corps for founders outside the US. Not legal or tax advice; check the state's own office before you file.</p>
+      </footer>
+    </div>
+    <script>
+      const q = document.getElementById("q");
+      const rows = [...document.querySelectorAll("tbody tr")];
+      q.addEventListener("input", () => {
+        const t = q.value.trim().toLowerCase();
+        for (const r of rows) r.hidden = t !== "" && !r.dataset.name.includes(t);
+      });
+    </script>
+    <style>.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}</style>
+  </body>
+</html>
